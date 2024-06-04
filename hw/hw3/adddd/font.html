@@ -29,23 +29,23 @@
     </div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Вот этот самый алгоритм и превращает Чака Норриса в красный. Далее мы применим его шаг за шагом и посмотрим, действительно ли Чак — это красный.</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">1. Распознавание атрибутов</h3>
-    <img src="../../hw2/img/im1.png" width="600px" height="60px" alt="box">
+    <div style="text-align: center;"><img src="../../hw2/img/im1.png" width="600px" height="60px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Браузер начинает интерпретировать HTML для формирования содержимого сайта. Он проходит по всему элементу тела (body) и видит в нем атрибут bgcolor, определяющий фоновый цвет этого элемента.</p>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Браузер видит атрибут bgcolor как chucknorris, который не является названием цвета или значением RGB. Тогда он решает, что переданное значение должно быть шестнадцатеричным, но в зашифрованном виде, и запускает алгоритм конвертации.</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">3. Замена символов</h3>
-    <img src="../../hw2/img/im2.png" width="600px" height="60px" alt="box">
+    <div style="text-align: center;"><img src="../../hw2/img/im2.png" width="600px" height="60px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Hex-значения состоят из 16 разных символов, которые могут включать цифры от 0 до 9 и буквы от A до F. Прочие символы к шестнадцатеричным не относятся. На этом шаге браузер заменяет все не-hex символы на 0, который является шестнадцатеричным. В chucknorris единственным hex-символом является c, значит все остальные заменяются на 0.</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">4. Добавление нулей</h3>
-    <img src="../../hw2/img/im3.png" width="600px" height="60px" alt="box">
+    <div style="text-align: center;"><img src="../../hw2/img/im3.png" width="600px" height="60px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Цвета в цифровом пространстве состоят из трех компонентов, а именно красного, зеленого и синего (RGB). Именно поэтому из созданной на предыдущем шаге строки необходимо извлечь три части. Однако, как можно заметить, выходная строка содержит 11 символов, которые поровну на три части не делятся. Следовательно, согласно алгоритму, браузер должен добавить в конец этой строки один 0 .</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">5. Извлечение трех каналов (RGB)</h3>
-    <img src="../../hw2/img/im4.png" width="600px" height="60px" alt="box">
+    <div style="text-align: center;"> <img src="../../hw2/img/im4.png" width="600px" height="60px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Теперь, когда строка состоит из 12 символов, браузер может разделить ее на 3 равные части, каждая из которых будет представлять цветовой канал слева направо: красный, зеленый и синий.</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">6. Усечение строк</h3>
-    <img src="../../hw2/img/im5.png" width="600px" height="60px" alt="box">
+    <div style="text-align: center;"><img src="../../hw2/img/im5.png" width="600px" height="60px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Каждая подстрока содержит четыре символа. Тем не менее браузеру для формирования hex-кода цвета от каждого канала нужно лишь по два. На этом шаге подстроки усекаются до двух символов, чтобы удовлетворить этим требованиям. Делается это путем удаления всех символов, кроме первых двух.</p>
     <h3 style="text-align: justify; padding-left: 200px; padding-right: 200px;">7. Формирование hex-кода</h3>
-    <img src="../../hw2/img/im6.png" width="500px" height="300px" alt="box">
+    <div style="text-align: center;"><img src="../../hw2/img/im6.png" width="500px" height="300px" alt="box"></div>
     <p style="text-align: justify; padding-left: 200px; padding-right: 200px;">Пришло время формирования hex-кода и закрашивания фонового цвета Чаком Норрисом. У нас есть красный, зеленый и синий каналы по-отдельности. Для создания из них hex-кода нужно добавить в начало # и следом поочередно разместить их значения.<br>Та-дааа! Мы только что извлекли шестнадцатеричный код из chucknorris, представленный как #C00000, то есть темно красный.</p>
 </body>
 </html>
