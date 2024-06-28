@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center; background-color: darksalmon; height: 100px;
+}
+
+.content{
+    background-color: blueviolet; text-align: center;
+}
+
+.menu{
+    background-color: aqua; float: left; width: 100px; height: 300px;
+}
+
+.banner{
+    background-color: aqua; float: right; width: 100px; height: 300px;
+}
+
+.footer{
+    text-align: center; background-color: darksalmon; height: 100px;
+}
+
+.rasp{
+    clear: both; height: 0px;
+}
