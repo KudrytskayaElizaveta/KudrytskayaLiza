@@ -1,0 +1,17 @@
+@media all and (max-width:599px){
+    .menu{
+        float: none;
+    }
+    .photo{
+        float: none;
+    }
+
+    .yel{
+        background-color: #f7e774;
+    }
+
+    .ball{
+        background-color: white;
+        margin-left: 0;
+    }
+}

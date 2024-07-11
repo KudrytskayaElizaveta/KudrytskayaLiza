@@ -1,0 +1,17 @@
+@media all and (max-width:920px) {
+    .head, .footer{
+        text-transform: uppercase;
+    }
+    .main-text {
+        text-transform: uppercase;
+        color: rgb(29, 138, 29);
+    }
+
+    .menu-list {
+        text-transform: uppercase;
+    }
+
+    .menu {
+        text-transform: uppercase;
+    }
+}

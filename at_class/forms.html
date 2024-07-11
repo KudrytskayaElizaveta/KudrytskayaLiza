@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    div > p{
+        font-style: italic;
+    }
+
+    .legend-contacts{
+        text-transform: uppercase;
+    }
+</style>
+<body>
+    <div>
+        <h1>Форма заявки на работу в зоопарке</h1>
+        <p>Пожалуйста, заполните форму. Обязательные поля помечены *</p>
+    </div>
+
+    <form action="https://fe.it-academy.by/TestForm.php"method="post">
+        <fieldset>
+            <legend class="legend-contacts">Контактная информация</legend>
+            <label>Имя<br>
+                <input type="text" name="fam" value="Иванов">
+            </label><br>
+            <label>Телефон<br>
+                <input type="text" name="fam" value="Иванов">
+            </label><br>
+            <label>Email<br>
+                <input type="text" name="fam" value="Иванов">
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend class="legend-contacts">Персональная информация</legend>
+            <label>Возраст<br>
+                <input type="text" name="fam" value="Иванов">
+            </label><br>
+            <label>Пол<br>
+                <input type="text" name="fam" value="Иванов">
+            </label><br>
+            Перечислите личные качества:<br>
+            <textarea name="mytext"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend class="legend-contacts">Персональная информация</legend>
+            <input type="checkbox" name="animal" value="YES">Зебра
+            <input type="checkbox" name="animal" value="YES">Кошак
+            <input type="checkbox" name="animal" value="YES">Анаконда
+            <input type="checkbox" name="animal" value="YES">Человек
+            <input type="checkbox" name="animal" value="YES">Слон
+            <input type="checkbox" name="animal" value="YES">Антилопа
+            <input type="checkbox" name="animal" value="YES">Голубь
+            <input type="checkbox" name="animal" value="YES">Краб
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
