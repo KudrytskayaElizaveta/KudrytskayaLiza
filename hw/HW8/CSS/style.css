@@ -1,0 +1,83 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header-wrap{
+    background-image: url(../../HW8/img/wrap.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    padding-bottom: 510px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-list{
+    display: flex;
+    width: 415px;
+    justify-content: space-between;
+}
+
+.menu-list-right{
+    display: flex;
+    width: 325px;
+    justify-content: space-between;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 31px;
+    margin-left: -50px;
+}
+
+.menu-item{
+    padding-top: 30px;
+    line-height: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header-logo{
+    text-align: center;
+    margin-top: 208px;
+    line-height: 93px;
+    font-size: 85px;
+    color: #000000;
+}
+
+.btn{
+    position: relative;
+}
+
+.nav-button{
+    border-radius: 78px;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: absolute;
+}
+
+p{
+    color: #FFFFFF;
+}

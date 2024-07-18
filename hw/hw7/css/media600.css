@@ -1,6 +1,7 @@
 @media all and (max-width:599px){
     .menu{
         float: none;
+        text-transform: none;
     }
     .photo{
         float: none;
@@ -13,5 +14,15 @@
     .ball{
         background-color: white;
         margin-left: 0;
+    }
+
+    .menu-list-item{
+        list-style-type: none;
+        display: flex;
+    }
+
+    .menu-list{
+        padding: 5px;
+        text-transform: none;
     }
 }
