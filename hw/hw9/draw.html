@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test SVG</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        .home:hover{
+            fill:cornflowerblue;
+        }
+        .door:hover{
+            fill: palevioletred;
+            width: 100px;
+            height: 130px;
+        }
+        .window:hover{
+            fill:gold;
+            width: 100px;
+            height: 90px;
+        }
+        .wind:hover{
+            fill: purple;
+        }
+        .roof:hover{
+            fill:aquamarine;
+            stroke: #543;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <title>Home</title>
+             <rect class="home" id="svg_1" height="204" width="202" y="288.5" x="323" stroke="#000" fill="#fff"/>
+             <rect class="door" id="svg_2" height="95" width="81" y="382.5" x="350" stroke="#000" fill="#fff"/>
+             <rect class="window" id="svg_3" height="59" width="68" y="307.5" x="415" stroke="#000" fill="#fff"/>
+             <rect class="wind" id="svg_4" height="31" width="37" y="325.5" x="432" stroke="#000" fill="#fff"/>
+             <rect id="svg_5" height="10" width="40" y="427.5" x="361" stroke="#000" fill="#fff"/>
+             <path class="roof" stroke="#000" id="svg_23" d="m324.04501,287.51313l100.99997,-162l100.99997,162l-201.99995,0z" fill="#fff"/>
+            </g>
+           </svg>
+    </div>
+</body>
+</html>
