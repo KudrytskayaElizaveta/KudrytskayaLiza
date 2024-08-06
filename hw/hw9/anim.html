@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: aquamarine;
+            height: 1000px;
+        }
+
+        .container:hover .ex3{
+            background-color: royalblue;
+        }
+
+        @keyframes Animation1 {
+            from {
+                background-color: rgb(149, 241, 57);
+                color: red
+            }
+
+            50% {
+                background-color: rgb(250, 255, 120);
+                color: red
+            }
+
+            to {
+                background-color: rgb(244, 16, 252);
+                color: blue
+            }
+        }
+
+        .ex1 {
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            animation: Animation1 5s infinite;
+            text-transform: uppercase;
+        }
+
+        .ex2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(180deg, rgb(207, 154, 198) 20%, rgb(119, 182, 82) 80%);
+            background: -moz-linear-gradient(180deg, rgb(207, 154, 198) 20%, rgb(119, 182, 82) 80%);
+            background: linear-gradient(180deg, rgb(207, 154, 198) 20%, rgb(119, 182, 82) 80%);
+            transform: translateY(0);
+            transition: transform 1s;
+            margin-left: 360px;
+        }
+
+        .ex2::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            height: 8px;
+            width: 100%;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.2);
+            transform: translate(-50%, 0);
+            transition: transform 1s;
+        }
+
+        .ex2:hover {
+            transform: translateY(-40px);
+            transition: transform 1s;
+        }
+
+        .ex2:hover::after {
+            transform: translate(-50%, 40px) scale(0.75);
+            transition: transform 1s;
+        }
+
+        .ex3 {
+            background:
+            radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54, 78, 39, 0) 12%, rgba(54, 78, 39, 0)) 50px 0,
+            radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210, 202, 171, 0) 12%, rgba(210, 202, 171, 0)) 50px 0,
+            radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54, 78, 39, 0) 12%, rgba(54, 78, 39, 0)) 0 50px,
+            radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210, 202, 171, 0) 12%, rgba(210, 202, 171, 0)) 0 50px,
+            radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210, 202, 171, 0) 17%),
+            radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54, 78, 39, 0) 17%),
+            radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210, 202, 171, 0) 17%) 50px 50px,
+            radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54, 78, 39, 0) 17%) 50px 50px;
+            background-color: #63773F;
+            background-size: 100px 100px;
+            width: 300px;
+            height: 200px;
+            margin-left: 680px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <p class="ex1">
+            Я постоянно анимирован<br>
+            бла бла бла
+        </p>
+        <div class="ex2">
+        </div>
+        <div class="ex3">
+        </div>
+    </div>
 </body>
+
 </html>
