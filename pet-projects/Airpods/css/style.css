@@ -33,6 +33,7 @@ body{
     font-weight: 500;
     font-style: normal;
     position: relative;
+    height: 10000px;
 }
 
 .header_wrap{
@@ -64,18 +65,77 @@ body{
     margin-top: -17px;
 }
 
-.top_inner{
-    max-width: 1220px;
+.menu_item:last-child:hover{
+    background-color: #fff;
+    color: black;
 }
 
-.header_title{
+.top_inner{
+    position: relative;
+}
+
+.Pod{
+    position: absolute;
+    display: inline-block;
+    margin-top: 186px;
+    margin-left: 310px;
+    z-index: 1;
+    font-size: 210px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+.Air{
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    margin-top: 186px;
+    line-height: 120%;
+    margin-left: -1000px;
     font-size: 210px;
     font-weight: 700;
 }
 
+.S{
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    margin-top: 238px;
+    margin-left: -292px;
+    font-size: 210px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.M{
+    position: absolute;
+    display: inline-block;
+    margin-top: 460px;
+    margin-left: -224px;
+    font-size: 210px;
+    font-weight: 700;
+    line-height: 120%;
+    z-index: 2;
+}
+
+.AX{
+    position: absolute;
+    display: inline-block;
+    font-size: 210px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 598px;
+    margin-left: -102px;
+    z-index: 1;
+}
+
 .header_pods{
+    position: relative;
+    z-index: 2;
     width: 800px;
     height: 755px;
+    margin-left: 200px;
+    margin-top: 73px;
 }
 
 .assortiment_info{
@@ -211,27 +271,28 @@ body{
 }
 
 .mailing-list-title{
-    text-align: left;
     margin-bottom: 35px;
     line-height: 120%;
+    font-size: 36px;
+    text-align: center;
 }
 
 .mailing-list-inner{
     display: flex;
-    gap: 60px 40px;
+    gap: 60px;
+    justify-content: center;
 }
 
 .mailing-list-text{
     line-height: 120%;
     flex-basis: 403px;
     text-align: center;
-    margin-right: 60px;
 }
 
 .mailing-list-form{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 580px;
+    flex-basis: 581px;
 }
 
 .mailing-list-email{
@@ -265,6 +326,7 @@ body{
 .checkbox-text{
     font-size: 13px;
     padding-left: 20px;
+    line-height: 120%;
 }
 
 .mailing-list-label{
@@ -296,4 +358,15 @@ body{
     background-color: #151618;
     top: 1px;
     left: 1px;
+}
+
+.photo{
+    height: 1845px;
+    background: url(../../Airpods/img/rec.png) left 1px bottom -205px no-repeat, url(../../Airpods/img/boyy.jpg) left top no-repeat;
+    /* background-position: center; */
+    /* background-size: cover;  */
+}
+
+footer{
+    background-color: black;
 }
