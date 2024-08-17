@@ -24,7 +24,8 @@ ul{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1220px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -36,9 +37,9 @@ body{
     height: 10000px;
 }
 
-.header_wrap{
-    background: url(../../Airpods/img/back-pink.png);
-    background-repeat: no-repeat;
+.header{
+    position: relative;
+    height: 1080px;
 }
 
 .header_inner{
@@ -70,72 +71,60 @@ body{
     color: black;
 }
 
-.top_inner{
-    position: relative;
+.top_content{
+    text-align: center;
+}
+
+.top_content::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -2;
+    background: linear-gradient(180deg, #F3D6D1 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
+}
+
+.header_title{
+    position: absolute;
+    padding-top: 110px;
 }
 
 .Pod{
-    position: absolute;
-    display: inline-block;
-    margin-top: 186px;
-    margin-left: 310px;
-    z-index: 1;
-    font-size: 210px;
-    line-height: 120%;
+    position: relative;
+    z-index: -1;
     font-weight: 700;
+    font-size: 210px;
 }
 
 .Air{
-    position: absolute;
-    display: inline-block;
-    z-index: 2;
-    margin-top: 186px;
-    line-height: 120%;
-    margin-left: -1000px;
-    font-size: 210px;
     font-weight: 700;
+    font-size: 210px;
 }
 
 .S{
-    position: absolute;
     display: inline-block;
-    z-index: 2;
-    margin-top: 238px;
-    margin-left: -292px;
-    font-size: 210px;
+    transform: translate(51px, 72px);
     font-weight: 700;
-    line-height: 120%;
+    font-size: 210px;
 }
 
 .M{
-    position: absolute;
     display: inline-block;
-    margin-top: 460px;
-    margin-left: -224px;
-    font-size: 210px;
+    transform: translate(-9px, 300px);
     font-weight: 700;
-    line-height: 120%;
-    z-index: 2;
+    font-size: 210px;
 }
 
 .AX{
-    position: absolute;
     display: inline-block;
-    font-size: 210px;
-    font-weight: 700;
-    line-height: 120%;
-    margin-top: 598px;
-    margin-left: -102px;
-    z-index: 1;
-}
-
-.header_pods{
+    transform: translate(900px, 228px);
     position: relative;
-    z-index: 2;
-    width: 800px;
-    height: 755px;
-    margin-left: 200px;
-    margin-top: 73px;
+    z-index: -1;
+    font-weight: 700;
+    font-size: 210px;
 }
 
 .assortiment_info{
