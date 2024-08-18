@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>if</title>
 </head>
 <body>
-    
+    <script>
+
+        var name=prompt('Введите имя:');
+        var lastname=prompt('Введите фамилию:');
+        var patronym=prompt('Введите отчество:');
+        var ageYears=parseInt(prompt('Введите ваш возраст в годах:'));
+        var isMale = confirm("Ваш пол - мужской?");
+
+        var ageDays = ageYears * 365;
+            var ageInFiveYears = parseInt(ageYears) + 5;
+            var gender = "мужской";
+            var retired = "нет";
+
+            if (!isMale) {
+                gender = "женский";
+            }
+
+            if (ageYears >= 63 && isMale || ageYears >= 58 && !isMale) {
+                retired = "да";
+            }
+
+        alert("Ваше ФИО: " + name + lastname + patronym  + "\n" + "Ваш возраст в годах: " + ageYears + "\n" + "Ваш возраст в днях: " + ageDays + "\n" + "через 5 лет вам будет: " + ageInFiveYears + "\n" + "ваш пол: " + gender + "\n" + "вы на пенсии: " + retired + "\n");
+    </script>
 </body>
 </html>

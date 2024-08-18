@@ -34,7 +34,6 @@ body{
     font-weight: 500;
     font-style: normal;
     position: relative;
-    height: 10000px;
 }
 
 .header{
@@ -212,7 +211,7 @@ body{
     object-fit: cover;
 }
 
-.characteristics, .mailing_list{
+.characteristics{
     background-color: #FAFAFA;
 }
 
@@ -231,6 +230,7 @@ body{
 }
 
 .characteristics_inner{
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
 }
@@ -255,9 +255,9 @@ body{
     font-size: 36px;
 }
 
-.mailing_list{
+/* .mailing_list{
     padding: 173px 0;
-}
+} */
 
 .mailing-list-title{
     margin-bottom: 35px;
@@ -349,13 +349,63 @@ body{
     left: 1px;
 }
 
-.photo{
-    height: 1845px;
-    background: url(../../Airpods/img/rec.png) left 1px bottom -205px no-repeat, url(../../Airpods/img/boyy.jpg) left top no-repeat;
-    /* background-position: center; */
-    /* background-size: cover;  */
+.footer{
+    padding: 250px 0 40px;
+    background-color: #000;
 }
 
-footer{
-    background-color: black;
+.sterio{
+    background: url(../../Airpods/img/boyy.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.sterio::after{ 
+    content: '';
+    position: absolute;
+    background-image: url(../../Airpods/img/rec.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    bottom: -100px;
+    width: 100%;
+    height: 192vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.sterio_inner{
+    margin-top: 100px;
+    min-height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sterio_box{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 55vh;
+}
+
+.sterio_text{
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 58px;
+    border-radius: 30px;
+    margin-top: 25px; 
 }
