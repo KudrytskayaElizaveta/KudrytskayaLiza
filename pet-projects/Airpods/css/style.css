@@ -90,7 +90,22 @@ body{
     width: 100%;
     bottom: 0;
     z-index: -2;
+}
+/* будет смотреть есть ли внутри такой тег */
+.top_content:has(.content_item--active.color--pink)::before{
     background: linear-gradient(180deg, #F3D6D1 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
+}
+.top_content:has(.content_item--active.color--blue)::before{
+    background: linear-gradient(180deg, #CADBEB 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
+}
+.top_content:has(.content_item--active.color--white)::before{
+    background: linear-gradient(180deg, #FAFAFA 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
+}
+.top_content:has(.content_item--active.color--black)::before{
+    background: linear-gradient(180deg, #B6B6B6 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
+}
+.top_content:has(.content_item--active.color--green)::before{
+    background: linear-gradient(180deg, #DDEAD9 0%, rgba(234.81, 234.81, 234.81, 0) 100%);
 }
 
 .header_title{
